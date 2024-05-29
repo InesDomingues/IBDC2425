@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução às Bases de Dados Clínicas</title>
+</head>
+<body>
+    <h1>Introdução às Bases de Dados Clínicas (IBDC)</h1>
+    <p>Inês Domingues</p>
+    <p>Email: ines.domingues@isec.pt</p>
+    <hr>
+    <h2>Horário de Atendimento</h2>
+    <p>Gabinete 29 (Edifício Informática e Biblioteca)</p>
+    <p>Zoom (preferencial): <a href="https://videoconf-colibri.zoom.us/my/inesdomingues">https://videoconf-colibri.zoom.us/my/inesdomingues</a></p>
+    <p>Quintas: 9h30 - 15h30</p>
+    <p>Marcação: ines.domingues@isec.pt</p>
+    <hr>
+    <h2>Tentativa de Planeamento</h2>
+    <ul>
+        <li>Módulo 1: Introdução aos Dados Clínicos
+            <ul><li>Aula 1</li></ul>
+        </li>
+        <li>Módulo 2: Princípios Básicos de Sistemas de Gestão de Bases de Dados
+            <ul><li>Aula 2</li></ul>
+        </li>
+        <li>Meta 1 do trabalho prático : Visão
+            <ul><li>Aula 3</li></ul>
+        </li>
+        <li>Módulo 3: Design de uma Base de Dados
+            <ul><li>Aulas 4 e 5</li></ul>
+        </li>
+        <li>Meta 2 do trabalho prático : Desenho
+            <ul><li>Aula 6</li></ul>
+        </li>
+        <li>Módulo 4: Implementação e Manutenção de uma Base de Dados
+            <ul><li>Aulas 7 e 8</li></ul>
+        </li>
+        <li>Meta 3 do trabalho prático : Implementação
+            <ul><li>Aula 9</li></ul>
+        </li>
+        <li>Módulo 5: Extração e Análise de Dados Clínicos
+            <ul><li>Aulas 10 a 12</li></ul>
+        </li>
+        <li>Meta 4 do trabalho prático : Análise
+            <ul><li>Aula 13</li></ul>
+        </li>
+        <li>Revisões
+            <ul><li>Aula 14</li></ul>
+        </li>
+    </ul>
+    <hr>
+    <h2>Avaliação</h2>
+    <h3>Métodos de Avaliação</h3>
+    <ul>
+        <li>Quizzes (30%)</li>
+        <li>Projeto (40%)</li>
+        <li>Exame (30%) - Sem mínimos</li>
+    </ul>
+    <h3>Projeto</h3>
+    <ul>
+        <li>Grupos de 2 ou 3</li>
+        <li>4 Metas
+            <ul>
+                <li>Visão | 1 de outubro de 2023</li>
+                <li>Desenho | 22 de outubro de 2023</li>
+                <li>Implementação | 12 de novembro de 2023</li>
+                <li>Análise | 10 de dezembro de 2023</li>
+            </ul>
+        </li>
+        <li>Defesas de 10 minutos</li>
+    </ul>
+    <hr>
+    <h2>Bibliografia</h2>
+    <ul>
+        <li>Miniati, R., Iadanza, E., & Dori, F. (2016). Clinical engineering: From devices to systems. Academic Press.</li>
+        <li>Saltzman, W. (2009). Biomedical engineering: Bridging medicine and technology. Cambridge University Press.</li>
+        <li>Rob, P., & Coronel, C. (2009). Database systems: Design, implementation, and management (8th ed.). Thomson Course Technology.</li>
+        <li>Najarian, K., & Splinter, R. (2006). Biomedical signal and image processing. Taylor & Francis.</li>
+        <li>Enderle, J. D., Blanchard, S. M., & Bronzino, J. D. (2005). Introduction to biomedical engineering (2nd ed.). Elsevier.</li>
+    </ul>
+    <hr>
+    <h2>Aula 1 / 14 - Introdução aos Dados Clínicos</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>O que são dados clínicos?</li>
+        <li>A importância dos dados clínicos</li>
+        <li>Fontes de dados clínicos?</li>
+        <li>Características de Dados Clínicos</li>
+        <li>Ética e Proteção de Dados</li>
+    </ul>
+    <h3>O que são dados clínicos?</h3>
+    <ul>
+        <li>Definição: Dados clínicos referem-se a informações recolhidas de várias fontes, como pacientes, dispositivos médicos e sistemas de saúde, utilizadas para fins de diagnóstico, tratamento e investigação.</li>
+        <li>Dados Clínicos Relacionados com Pacientes: Incluem histórico médico, dados demográficos, resultados de laboratório, estudos de imagem, sinais vitais e avaliações clínicas.</li>
+        <li>Dados Clínicos Gerados por Dispositivos Médicos: Gerados por dispositivos como ECGs, monitores de pressão arterial ou dispositivos de fitness usados no corpo.</li>
+        <li>Dados Clínicos Gerados pelo Sistema de Saúde: Incluem registos de saúde eletrónicos (EHRs), sistemas de informação hospitalar e sistemas de informação laboratorial.</li>
+    </ul>
+    <h3>A importância dos dados clínicos</h3>
+    <ul>
+        <li>Investigação e Desenvolvimento: Base para estudos de pesquisa e ensaios clínicos.</li>
+        <li>Medicina Baseada em Evidências: Fornecem evidências empíricas para protocolos de tratamento e diretrizes de cuidados de saúde.</li>
+        <li>Cuidados e Monitorização do Paciente: Auxiliam na monitorização da saúde dos pacientes e na avaliação das respostas aos tratamentos.</li>
+        <li>Desenvolvimento de Dispositivos Médicos: Fundamentais no desenvolvimento e avaliação de dispositivos médicos.</li>
+        <li>Melhoria da Qualidade: Identificam padrões e tendências para melhoria na prestação de cuidados de saúde.</li>
+        <li>Otimização do Sistema de Saúde: Permitem decisões orientadas por dados, otimizando a alocação de recursos.</li>
+        <li>Investigação Colaborativa e Partilha de Dados: Recurso valioso para a colaboração entre investigadores, clínicos e instituições.</li>
+    </ul>
+    <h3>Fontes de dados clínicos</h3>
+    <p>Identificar pelo menos 3 fontes de dados:</p>
+    <ul>
+        <li>Registos de Saúde Eletrónicos (EHRs)</li>
+        <li>Imagens Médicas</li>
+        <li>Dispositivos e Sensores</li>
+        <li>Ensaios Clínicos e Estudos de Investigação</li>
+    </ul>
+    <h3>Características de Dados Clínicos</h3>
+    <ul>
+        <li>Dados Estruturados e Não Estruturados</li>
+        <li>Dados Longitudinais e Transversais</li>
+        <li>Diversidade de Tipos de Dados Clínicos</li>
+        <li>Natureza Interdisciplinar</li>
+    </ul>
+    <h3>Ética e Proteção de Dados</h3>
+    <ul>
+        <li>Privacidade</li>
+        <li>Confidencialidade</li>
+        <li>Consentimento Informado</li>
+        <li>Regulamentação Legal e Leis de Proteção de Dados (GDPR)</li>
+        <li>Comités de Ética</li>
+    </ul>
+    <hr>
+    <h2>Aula 2 / 14 - Sistemas de Gestão de Bases de Dados</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>Princípios Básicos dos Sistemas de Gestão de Bases de Dados</li>
+        <li>Implicações do GDPR no contexto de dados clínicos</li>
+        <li>Segurança e Ética</li>
+        <li>Introdução a Bases de Dados</li>
+        <li>Tipos de Bases de Dados</li>
+        <li>Bases de Dados Relacionais</li>
+        <li>SQL</li>
+    </ul>
+    <h3>Implicações do GDPR no contexto de dados clínicos</h3>
+    <ul>
+        <li>Consentimento Informado</li>
+        <li>Minimização de Dados e Limitação de Finalidade</li>
+        <li>Segurança e Integridade de Dados</li>
+        <li>Direitos dos Titulares dos Dados</li>
+        <li>Notificação de Violação de Dados</li>
+        <li>Transferências Internacionais de Dados</li>
+        <li>Data Protection Officer (DPO)</li>
+        <li>Avaliação do Impacto da Proteção de Dados (DPIAs)</li>
+    </ul>
+    <h3>Segurança e Ética</h3>
+    <ul>
+        <li>Gestão e Segurança de Dados</li>
+        <li>Uso Ético de Dados</li>
+        <li>Medidas de Segurança de Dados</li>
+        <li>Implicações Legais</li>
+        <li>Princípios Éticos</li>
+    </ul>
+    <h3>Introdução a Bases de Dados</h3>
+    <ul>
+        <li>Base de Dados: Armazena e manipula dados eletronicamente.</li>
+        <li>Principais Benefícios: Melhor organização de dados, integração de dados, consistência e integridade de dados, consulta e análise eficientes, segurança de dados e privacidade.</li>
+    </ul>
+    <h3>Tipos de Bases de Dados</h3>
+    <ul>
+        <li>Bases de Dados SQL: Relacionais e Analítico (OLAP)</li>
+        <li>Bases de Dados NoSQL: Armazenamento de Documentos, Chave-Valor, Famílias de Colunas, Bases de Dados de Grafos</li>
+    </ul>
+    <h3>Bases de Dados Relacionais</h3>
+    <ul>
+        <li>Tabelas</li>
+        <li>Linhas</li>
+        <li>Colunas</li>
+    </ul>
+    <h3>Tabelas</h3>
+    <p>As chaves ligam entidades (tabelas) com base em atributos partilhados</p>
+    <ul>
+        <li>Chave Primária: Identificador único para cada registo (linha)</li>
+        <li>Chave Estrangeira: Refere-se à chave primária de outra tabela</li>
+        <li>Chave Composta: Composta por dois ou mais atributos</li>
+        <li>Chave Candidata: Atributo que contém um valor único em cada linha</li>
+        <li>Chave Alternativa: Chave candidata não selecionada como chave primária</li>
+    </ul>
+    <h3>Cardinalidade</h3>
+    <ul>
+        <li>Um-para-Um (1:1)</li>
+        <li>Um-para-Muitos (1:N)</li>
+        <li>Muitos-para-Muitos (N:M)</li>
+    </ul>
+    <h3>SQL</h3>
+    <p>Linguagem de Consulta Estruturada (SQL): Gestão e manipulação de bases de dados relacionais</p>
+    <ul>
+        <li>Fácil de usar</li>
+        <li>Padrão</li>
+        <li>Portátil</li>
+        <li>Abrangente</li>
+        <li>Processamento de Dados</li>
+    </ul>
+    <h3>Categorias da Linguagem SQL</h3>
+    <ul>
+        <li>Data Query Language (DQL)</li>
+        <li>Data Control Language (DCL)</li>
+        <li>Data Definition Language (DDL)</li>
+        <li>Data Manipulation Language (DML)</li>
+        <li>Transaction Control Language (TCL)</li>
+    </ul>
+    <h3>Comandos SQL</h3>
+    <ul>
+        <li>INSERT</li>
+        <li>UPDATE</li>
+        <li>DELETE</li>
+        <li>CREATE</li>
+        <li>ALTER</li>
+        <li>DROP</li>
+    </ul>
+    <h3>Declaração SQL SELECT</h3>
+    <p>Exemplo: SELECT coluna1, coluna2 FROM table_name WHERE condition</p>
+    <hr>
+    <h2>Aula 3 / 14 - Apresentações da primeira meta do trabalho</h2>
+    <h3>Meta 1: Visão</h3>
+    <p>Descrição do sistema: Propósito, Público-alvo, Funcionalidades principais, Benefícios</p>
+    <p>Data de entrega: 1 de outubro de 2023</p>
+    <h3>Critérios de avaliação:</h3>
+    <ul>
+        <li>Propósito</li>
+        <li>Público-Alvo/Stakeholders</li>
+        <li>Funcionalidades</li>
+        <li>Benefícios</li>
+        <li>Originalidade e Diversidade</li>
+        <li>Qualidade da Escrita e Apresentação</li>
+        <li>Entrega</li>
+    </ul>
+    <hr>
+    <h2>Aula 4 / 14 - Desenho de uma base de dados clínica</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>Recolha e especificação de requisitos</li>
+        <li>Interessadas e da Organização</li>
+        <li>Modelos de dados e desenho</li>
+        <li>SGBD Relacionais mais usados</li>
+        <li>Tipos de Dados</li>
+        <li>Tipos de dados especiais</li>
+        <li>Restrições (Constraints)</li>
+        <li>Criação de tabelas</li>
+    </ul>
+    <h3>Recolha e especificação de requisitos</h3>
+    <ul>
+        <li>Recolha de requisitos</li>
+        <li>Compreensão das Necessidades dos Utilizadores</li>
+        <li>Especificações Claras e Detalhadas</li>
+    </ul>
+    <h3>Modelos de dados e desenho</h3>
+    <ul>
+        <li>Modelos de dados: Conceitual, Lógico, Físico</li>
+    </ul>
+    <h3>SGBD Relacionais mais usados</h3>
+    <ul>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>Microsoft SQL Server</li>
+        <li>Oracle Database</li>
+    </ul>
+    <h3>Tipos de Dados</h3>
+    <ul>
+        <li>Dados numéricos</li>
+        <li>Dados de texto</li>
+        <li>Dados de Data e Hora</li>
+    </ul>
+    <h3>Restrições (Constraints)</h3>
+    <ul>
+        <li>NOT NULL</li>
+        <li>DEFAULT</li>
+    </ul>
+    <h3>Criação de tabelas</h3>
+    <p>Exemplo: AUTO_INCREMENT para chaves primárias únicas</p>
+    <hr>
+    <h2>Aula 5 / 14 - Desenho e consulta a bases de dados</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>Operadores Aritméticos</li>
+        <li>Operadores de comparação</li>
+        <li>SELECT DISTINCT</li>
+        <li>Linguagem de manipulação de dados (DML)</li>
+        <li>INSERT INTO SELECT</li>
+        <li>Linguagem de Definição de Dados (DDL)</li>
+        <li>Relações entre entidades</li>
+    </ul>
+    <hr>
+    <h2>Aula 6 / 14 - Cibersegurança</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>Palestra sobre cibersegurança</li>
+        <li>Apresentações da segunda meta do trabalho</li>
+    </ul>
+    <h3>Meta 2: Desenho</h3>
+    <ul>
+        <li>Desenho das Tabelas da Base de Dados</li>
+        <li>Relações entre Tabelas</li>
+        <li>Mockups da Interface de Utilizador</li>
+        <li>Incorporação da Meta 1</li>
+    </ul>
+    <p>Data de Entrega: 22 de outubro de 2023</p>
+    <h3>Critérios de Avaliação:</h3>
+    <ul>
+        <li>Qualidade dos Desenhos das Tabelas</li>
+        <li>Clareza das Relações</li>
+        <li>Qualidade dos Mockups</li>
+        <li>Atualização da Meta 1</li>
+        <li>Originalidade e Diversidade</li>
+        <li>Qualidade da Escrita e Apresentação</li>
+        <li>Entrega</li>
+    </ul>
+    <hr>
+    <h2>Aula 7 / 14 - Normalização de Bases de Dados</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>Anomalias</li>
+        <li>Formas Normais</li>
+        <li>Dependências</li>
+        <li>Desnormalização</li>
+    </ul>
+    <h3>Anomalias</h3>
+    <ul>
+        <li>Anomalia de Inserção</li>
+        <li>Anomalia de Atualização</li>
+        <li>Anomalia de Eliminação</li>
+    </ul>
+    <h3>Normalização e Desnormalização</h3>
+    <ul>
+        <li>Normalização: Eliminação da redundância de dados, prevenção de anomalias de atualização e manutenção da integridade dos dados</li>
+        <li>Desnormalização: Introdução deliberada de redundância para otimizar o desempenho de consulta</li>
+    </ul>
+    <h3>Formas Normais</h3>
+    <ul>
+        <li>Primeira Forma Normal (1NF)</li>
+        <li>Segunda Forma Normal (2NF)</li>
+        <li>Terceira Forma Normal (3NF)</li>
+    </ul>
+    <h3>Dependências</h3>
+    <ul>
+        <li>Dependência Funcional Parcial</li>
+        <li>Dependência Transitiva</li>
+    </ul>
+    <hr>
+    <h2>Aula 8 / 14 - Otimização e Indexação</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>Boas práticas</li>
+        <li>Otimização de Bases de Dados</li>
+        <li>Indexação</li>
+        <li>B-Trees</li>
+    </ul>
+    <h3>Boas práticas</h3>
+    <ul>
+        <li>Evitar o uso de wildcards no início das pesquisas</li>
+        <li>Preferir INNER JOIN ao OUTER JOIN</li>
+        <li>Evitar o uso de colunas desnecessárias na cláusula SELECT</li>
+    </ul>
+    <h3>Otimização da Base de Dados: Indexação</h3>
+    <ul>
+        <li>Motivação: Índices são essenciais para a recuperação eficiente de dados</li>
+        <li>Considerações: Índices melhoram o desempenho, mas exigem manutenção regular</li>
+        <li>Tipos de índices: Primário (Agrupado) e Secundário (Não Agrupado)</li>
+    </ul>
+    <h3>B-Trees</h3>
+    <p>Índices em MySQL são armazenados em B-Trees para manter uma estrutura ordenada, facilitando a pesquisa de correspondências exatas e intervalos.</p>
+    <hr>
+    <h2>Aula 9 / 14 - Apresentações da terceira meta do trabalho</h2>
+    <h3>Meta 3: Implementação</h3>
+    <p>Implementação da base de dados no MySQL Workbench</p>
+    <ul>
+        <li>Parte 1: Base de dados normalizada</li>
+        <li>Parte 2: Base de dados desnormalizada</li>
+    </ul>
+    <p>Data de Entrega: 12 de novembro de 2023</p>
+    <h3>Critérios de Avaliação:</h3>
+    <ul>
+        <li>Normalização da Base de Dados</li>
+        <li>Análise Crítica</li>
+        <li>Preenchimento e Relações na Base de Dados</li>
+        <li>Desnormalização</li>
+        <li>Qualidade e Clareza do Código SQL</li>
+    </ul>
+    <hr>
+    <h2>Aula 10 / 14 - Análise de Dados em SQL</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>Subconsultas</li>
+        <li>Expressões de tabela comum</li>
+        <li>Junções</li>
+        <li>Vistas</li>
+        <li>União</li>
+        <li>Funções</li>
+        <li>Tipos de Análise de Dados</li>
+    </ul>
+    <h3>Análise de dados</h3>
+    <ul>
+        <li>Extração e Análise de Dados Clínicos</li>
+        <li>Decisões Médicas Informadas</li>
+    </ul>
+    <h3>Análise de dados em SQL</h3>
+    <ul>
+        <li>Subconsultas</li>
+        <li>Expressões de tabela comum (CTEs)</li>
+        <li>Views (ou Tabelas Virtuais)</li>
+        <li>Joins</li>
+        <li>UNION & UNION ALL</li>
+    </ul>
+    <h3>Funções</h3>
+    <ul>
+        <li>Funções escalares</li>
+        <li>Funções Não-Determinísticas</li>
+        <li>Funções de Agregação</li>
+    </ul>
+    <h3>Tipos de Análise de Dados</h3>
+    <ul>
+        <li>Descritiva</li>
+        <li>Diagnóstica</li>
+        <li>Preditiva</li>
+        <li>Prescritiva</li>
+    </ul>
+    <hr>
+    <h2>Aula 11 / 14 - Proteção de Dados</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>António Carvalho, IPO Porto</li>
+        <li>Zoom: <a href="https://videoconf-colibri.zoom.us/my/inesdomingues">https://videoconf-colibri.zoom.us/my/inesdomingues</a></li>
+        <li>Registo de presenças: 05 51 25</li>
+    </ul>
+    <hr>
+    <h2>Aula 12 / 14 - Análise de dados em SQL (cont)</h2>
+    <h3>Conteúdos</h3>
+    <ul>
+        <li>Extract, Transform, and Load (ETL)</li>
+        <li>Declaração Preparada (Prepared Statement)</li>
+        <li>Tabelas Temporárias</li>
+        <li>Funções e Procedimentos</li>
+        <li>IF-ELSE</li>
+        <li>Validação de Dados e Controlo de Qualidade</li>
+        <li>Gatilhos (Triggers) de Sequência</li>
+        <li>Eventos Agendados (Scheduled Events)</li>
+        <li>Funções Analíticas (Window Functions)</li>
+        <li>Limitações do MySQL e Alternativas</li>
+    </ul>
+    <h3>ETL</h3>
+    <p>Visão Geral: Recolha e preparação de dados oriundos de várias fontes.</p>
+    <ul>
+        <li>Extrair</li>
+        <li>Transformar</li>
+        <li>Carregar</li>
+        <li>Ingestão Contínua de Dados</li>
+        <li>Validação Preliminar de Dados</li>
+    </ul>
+</body>
+</html>
